@@ -1,25 +1,34 @@
-# A Drupal via DDEV template on Gitpod
+This repository has everything you need to start an ephemeral development environments with either Github Codespaces or [Gitpod](https://www.gitpod.io/).
 
-This is a [Drupal via DDEV](https://github.com/drud/ddev) template configured for ephemeral development environments on [Gitpod](https://www.gitpod.io/).
+# Start with Github Codespaces
 
-## Next Steps
+1. Click on "Code"
+2. Click on "Codespaces"
+3. Click on the button "Create codespace on codespaces".
+4. Once in the codespace you can run the following:
 
-Click the button below to start a new development environment:
+```
+cd project
+./setup_for_codespaces.sh
+```
+
+Your site will be installed at that point, you can access it by going to the "Ports" section in VS Code and finding the port 8080.
+
+# Start with Gitpod
+
+You can click the button below to start a new development environment in Gitpod:
+
+Please note it will be tied to this repository, so if you want to tie it to your own, then you must fork this project, and edit line 23 to use your own repository.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dharizza/lbworkshop)
 
-## Get Started With Your Own Project
+Once in the Gitpod environment, go to the terminal and run the following commands:
 
-### A new project
-
-Click the above "Open in Gitpod" button to start a new workspace. Once you're ready to push your first code changes, Gitpod will guide you to fork this project so you own it.
-
-Run `.gitpod/gitpod-setup-ddev.sh` once the workspace has started to commence
-
-### An existing project
-
-To get started with Drupal via DDEV on Gitpod, add a [`.gitpod.yml`](./.gitpod.yml) file and the [`.gitpod`] directory which contain the configuration to improve the developer experience on Gitpod. To learn more, please see the [Getting Started](https://www.gitpod.io/docs/getting-started) documentation.
+```
+cd project
+./setup_for_gitpod.sh
+```
 
 ## Special thanks
 
-This template was gifted to Gitpod by [Ofer Shaal](https://github.com/shaal) - Thank you 🙏!
+This template for DDEV in Gitpod was gifted to Gitpod by [Ofer Shaal](https://github.com/shaal) - Thank you 🙏!
